@@ -1,0 +1,185 @@
+/***** GLOBAL *****/
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(60, 60, 60);
+    height: 100vh;
+}
+
+
+/***** NAV *****/
+
+h1 {
+    font-size: 3em;
+    margin: 0.325rem 0 1rem;
+    color: black;
+    font-family: 'Righteous', cursive;
+    text-shadow: 2px 2px 2px rgb(173, 200, 230), 0 0 .5rem rgb(173, 200, 230), 0 0 .5rem rgb(173, 200, 230);
+}
+
+a > h1:hover {
+    transform: scale(1.15) rotate(360deg);
+    transition: .8s;
+}
+
+nav a {
+    font-size: 1.2rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #ededed;
+    border-bottom: 1px solid darkgreen;
+}
+
+
+/***** HOME *****/
+.quiz {
+    border:1px solid #c9c9c9;
+    border-radius: 8px;
+    padding: 20px 20px;
+    background-color: #ededed;
+}
+
+.quiz:hover {
+    transform: scale(1.10);
+    transition: 1s;
+    background-color: #dbdada;
+}
+
+h2 {
+    font-size: 2.4em;
+    margin: 1rem 0 0.5rem;
+    color: darkblue;
+    font-family: 'Righteous', cursive;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 0.325rem 0 0.75rem;
+    color: darkcyan;
+    font-family: 'Righteous', cursive;
+}
+
+p {
+    margin: 0.625rem 0;
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+    background-color: white;
+    padding: 1.25rem;
+    margin-top: 0.625rem;
+    border: 1px solid darkblue;
+}
+
+.row > .col {
+    flex: 1;
+}
+
+
+/***** QUIZ *****/
+.response:hover {
+    font-weight: bold;
+    transition: .3s;
+}
+
+.correct {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.wrong {
+    color: darkred;
+    font-weight: bold;
+}
+
+.question {
+    margin: 0.625rem 1.25rem;
+    border-radius: 25px 0px;
+}
+
+.question-beginner {
+    border : 1px solid darkgreen;
+}
+
+.question-medium {
+    border : 1px solid darkgoldenrod;
+}
+
+.question-expert {
+    border : 1px solid darkred;
+}
+
+.question__question {
+    margin: 0.625rem 0;
+    font-weight: bold;
+}
+
+.level {
+    font-size: 0.8em;
+}
+
+.level--beginner {
+    color: white;
+    background-color: darkgreen;
+    font-weight: bold;
+    padding : 5px 10px;
+    border-radius: 0px 30px;
+}
+
+.level--medium {
+    color: black;
+    background-color: darkgoldenrod;
+    font-weight: bold;
+    padding : 5px 10px;
+    border-radius: 0px 30px;
+}
+
+.level--expert {
+    color: white;
+    background-color: darkred;
+    font-weight: bold;
+    padding : 5px 10px;
+    border-radius: 0px 30px;
+}
+
+
+.question__info {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.question__choices {
+    margin: 0.625rem 0;
+}
+
+
+/***** INSCRIPTION - CONNEXION - DECONNEXION*****/
+.form {
+    background-color: #ededed;
+}
+
+#signin, #signup {
+    margin : 2rem 0;
+}
+
+
+/****** ADMIN ******/
+
+select{
+    height: 2rem;
+    text-align: center;
+    background-color: white;
+}
+
+
+#tag-add, #question-add, #quiz-add, #tag-delete, #quiz-delete, #question-delete, #tag-update, #quiz-update, #question-update {
+    margin-top: 2rem;
+    text-align: center;
+}
